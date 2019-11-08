@@ -1,0 +1,30 @@
+{
+  "name": "JackNenniger.com",
+  "version": "1.0.0",
+  "description": "A personal site built in react",
+  "private": true,
+  "main": "index.js",
+  "author": "John (Jack) Nenniger",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-react": "^7.7.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
