@@ -1,16 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router,
         Switch, 
-        Link,
         Route 
     } from 'react-router-dom';
+// Media Queries can go within each component
+// import MediaQuery from 'react-responsive';
 
 
 export default function AppRouter() {
     return (
-        // TODO: Should I use media queries to render 
-        // different components for different sizes of screen? 
-        // OR use a different system for mobile design 
         <Router>
             <main>
                 <div> {/* Nav section */}
