@@ -3,6 +3,9 @@ import { BrowserRouter as Router,
         Switch, 
         Route 
     } from 'react-router-dom';
+import Blog from '../components/Blog';
+import About from '../components/About';
+import Secret from '../components/Secret';
 // Media Queries can go within each component
 // import MediaQuery from 'react-responsive';
 
@@ -18,15 +21,20 @@ export default function AppRouter() {
                     <h2>Here's where I'll add the sidebar</h2>
                 </div>
                 <Switch>
-                    <Route path="/secret">
-                        <h1></h1>
-                    </Route>
-                    <Route path="/resume" >
-                        <h1>About Me/Resume</h1>
-                    </Route>
-                    <Route path="/">
-                        <h1>Home (Blog)</h1>
-                    </Route>
+                    <Route 
+                        exact 
+                        path="/"
+                        component = { Blog }
+                    />
+                    <Route 
+                        path="/secret"
+                        component={Secret}
+                    />
+                    <Route 
+                        path="/about" 
+                        component={ About }
+                    />
+                    <Route path="/photos" />
                 </Switch>
             </main>
         </Router>
