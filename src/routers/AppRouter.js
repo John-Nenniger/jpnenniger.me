@@ -6,20 +6,23 @@ import { BrowserRouter as Router,
 import Blog from '../components/Blog';
 import About from '../components/About';
 import Secret from '../components/Secret';
+import Header from '../components/Header';
+import SidePane from '../components/SidePane';
+import MediaQuery from 'react-responsive';
 // Media Queries can go within each component
 // import MediaQuery from 'react-responsive';
+// const phoneSized = useMediaQuery({query: '(max-width: 600px)'})
 
 
 export default function AppRouter() {
     return (
         <Router>
             <main>
-                <div> {/* Nav section */}
-                    <h1>I am a Navbar!</h1>
-                </div>
-                <div>
-                    <h2>Here's where I'll add the sidebar</h2>
-                </div>
+                <Header/>
+                {/*Here I'm going to render SidePane unless on Mobile */}
+                <MediaQuery minDeviceWidth={600}>
+                   <SidePane/>
+                </MediaQuery>
                 <Switch>
                     <Route 
                         exact 
@@ -28,12 +31,17 @@ export default function AppRouter() {
                     />
                     <Route 
                         path="/secret"
-                        component={Secret}
+                        component={ Secret }
                     />
-                    <Route 
-                        path="/about" 
-                        component={ About }
-                    />
+                    {/* and Render an about me page only if we're on Mobile and my 
+                    sidepanel is not being rendered
+                    */}
+                    <MediaQuery maxDeviceWidth={600}>
+                        <Route 
+                            path="/about" 
+                            component={ About }
+                        />
+                    </MediaQuery>
                     <Route path="/photos" />
                 </Switch>
             </main>
