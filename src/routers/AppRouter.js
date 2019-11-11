@@ -9,10 +9,6 @@ import Secret from '../components/Secret';
 import Header from '../components/Header';
 import SidePane from '../components/SidePane';
 import MediaQuery from 'react-responsive';
-// Media Queries can go within each component
-// import MediaQuery from 'react-responsive';
-// const phoneSized = useMediaQuery({query: '(max-width: 600px)'})
-
 
 export default function AppRouter() {
     return (
