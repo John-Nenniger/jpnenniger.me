@@ -1,9 +1,10 @@
 @import './base/settings';
 @import './base/base';
+@import './components/header';
+@import './components/side_pane';
 
-
-.side-pane {
-    width: 20vw;
-    height: 100vh;
-
+.main{
+    height: 100%;
+    width:100%;
 }
+

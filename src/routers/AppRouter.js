@@ -13,10 +13,10 @@ import MediaQuery from 'react-responsive';
 export default function AppRouter() {
     return (
         <Router>
-            <main>
-                <Header/>
+            <main className="bg-washed-blue main" >
+                {/* <Header/> */}
                 {/*Here I'm going to render SidePane unless on Mobile */}
-                <MediaQuery minDeviceWidth={600}>
+                <MediaQuery minDeviceWidth={ 600 }>
                    <SidePane/>
                 </MediaQuery>
                 <Switch>
@@ -32,7 +32,7 @@ export default function AppRouter() {
                     {/* and Render an about me page only if we're on Mobile and my 
                     sidepanel is not being rendered
                     */}
-                    <MediaQuery maxDeviceWidth={600}>
+                    <MediaQuery maxDeviceWidth={ 600 }>
                         <Route 
                             path="/about" 
                             component={ About }
