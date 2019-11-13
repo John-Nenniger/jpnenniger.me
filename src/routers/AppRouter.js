@@ -13,7 +13,7 @@ import MediaQuery from 'react-responsive';
 export default function AppRouter() {
     return (
         <Router>
-            <main className="bg-washed-blue main" >
+            <main className="main" >
                 {/* <Header/> */}
                 {/*Here I'm going to render SidePane unless on Mobile */}
                 <MediaQuery minDeviceWidth={ 600 }>

@@ -1,6 +1,30 @@
 
 .side-pane {
-    width: 15vw;
+    background-color: #999999;
+    position: fixed;
+    width: 10vw;
     height: 100vh;
-    border-radius: $s-size;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    border-top-right-radius: 1em 2em;
+    border-bottom-right-radius: 1em 2em;
+    transition: background-color 1.5s, width 1.5s
+
+}
+
+
+.side-pane:hover {
+    background-color: #AAAAAA;
+    width: 25vw;
+}
+
+.headshot{
+    width: 200px;
+    height: 200px;
+    // background-image: url('../../public/images/jack.jpeg');
+    background: url('../../public/images/jack.jpeg') center no-repeat;
+    padding: $m-size;
+
 }
