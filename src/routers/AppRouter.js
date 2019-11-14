@@ -17,7 +17,6 @@ export default function AppRouter() {
                 <div className="header_container">
                     <Header/>
                 </div>
-                {/*Here I'm going to render SidePane unless on Mobile */}
                 <MediaQuery minDeviceWidth={ 600 }>
                    <SidePane/>
                 </MediaQuery>
@@ -31,15 +30,10 @@ export default function AppRouter() {
                         path="/secret"
                         component={ Secret }
                     />
-                    {/* and Render an about me page only if we're on Mobile and my 
-                    sidepanel is not being rendered
-                    */}
-                    <MediaQuery maxDeviceWidth={ 600 }>
-                        <Route 
-                            path="/about" 
-                            component={ About }
-                        />
-                    </MediaQuery>
+                    <Route 
+                        path="/about" 
+                        component={ About }
+                    />
                     <Route path="/photos" />
                 </Switch>
             </main>

@@ -7,3 +7,5 @@ node_modules/
 public/images
 
 public/svg
+
+public/bundled_files

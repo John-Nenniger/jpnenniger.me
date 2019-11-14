@@ -3,13 +3,14 @@
 }
 
 .navbar {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-around;
 }
 
 .header_container{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 14vh;
 }

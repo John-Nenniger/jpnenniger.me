@@ -20,9 +20,10 @@ module.exports = {
             ],
         }, {
             test: /\.(png|jpe?g|gif)$/i,
-            use: [
-                'file-loader',
-            ],
+            loader: 'file-loader',
+            options: {
+                outputPath: 'bundled_files'
+            }
         }]
     },
     mode: "development",
