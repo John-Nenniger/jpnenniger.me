@@ -1,14 +1,14 @@
-.navlink {
+.header__navlink {
     font-size: $l-size;
 }
 
-.navbar {
+.header__navbar {
     display: flex;
     justify-content: flex-end;
     align-items: space-around;
 }
 
-.header_container{
+.header{
     display: flex;
     justify-content: center;
     width: 100vw;

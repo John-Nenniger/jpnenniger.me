@@ -29,16 +29,16 @@ class SidePane extends React.Component {
     render() {
         return (
             <div 
-                className="side-pane vh-100 br b--blue shadow-2"
+                className="side-pane"
                 onMouseOver={this.onMouseOver}
                 onMouseLeave = {this.onMouseLeave}
             >
                 <FontAwesomeIcon 
                     icon="glasses"
-                    className="glasses"
+                    className="side-pane__icon"
                 />
                 {this.state.display && <div className="about-me">
-                    <div className="headshot"> </div>
+                    <div className="side-pane__headshot"> </div>
                 </div>}
                 {this.state.display && <h1>Sidepanel</h1> }
             </div>

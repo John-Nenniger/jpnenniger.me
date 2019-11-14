@@ -23,7 +23,7 @@
     opacity: 1;
 }
 
-.headshot{
+.side-pane__headshot{
     width: 200px;
     height: 200px;
     // background-image: url('../../public/images/jack.jpeg');
@@ -32,7 +32,7 @@
 
 }
 
-.glasses{
+.side-pane__icon {
     opacity: 1;
     height: $m-size;
     width: $m-size;

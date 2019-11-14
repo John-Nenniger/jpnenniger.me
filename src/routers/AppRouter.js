@@ -14,9 +14,7 @@ export default function AppRouter() {
     return (
         <Router>
             <main className="main" >
-                <div className="header_container">
-                    <Header/>
-                </div>
+                <Header/>
                 <MediaQuery minDeviceWidth={ 600 }>
                    <SidePane/>
                 </MediaQuery>
