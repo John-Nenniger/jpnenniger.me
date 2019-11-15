@@ -1,23 +1,21 @@
 .header{
-    background-color: $color-4;
+    background-color: $shade-1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    height: 14vh;
-    position: fixed;
+    height: 9vh;
 }
 
 .header__navlink {
     font-size: $l-size;
-    color: $shade-2;
-    transition: background-color 0.75s;
+    color: $off-white;
     padding: $m-size;
     border-radius: $m-size;
     text-decoration: none;
 }
 
 
-.header__navlink:focus {
-    background-color: $color-2;
-}
+// .header__navlink:hover {
+//     background-color: $color-2;
+// }

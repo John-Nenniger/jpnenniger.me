@@ -3,7 +3,7 @@ import { BrowserRouter as Router,
         Switch, 
         Route 
     } from 'react-router-dom';
-import Blog from '../components/Blog';
+import Writing from '../components/Writing';
 import About from '../components/About';
 import Secret from '../components/Secret';
 import Header from '../components/Header';
@@ -21,7 +21,7 @@ export default function AppRouter() {
                         <Route 
                             exact 
                             path="/"
-                            component = { Blog }
+                            component = { Writing }
                         />
                         <Route 
                             path="/secret"

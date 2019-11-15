@@ -1,0 +1,32 @@
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about__container {
+    width: 45vw;
+    height: 80vh;
+    text-align: center;
+}
+
+.about__profile-photo{
+    background: url('../../public/images/jack.jpeg') center no-repeat;
+    height: 90%;
+    width: 90%;
+    margin: $m-size;
+    box-shadow: 1.2em 1.2em 0.1em 0.2em $shade-1;
+    border: 0.4em
+}
+
+
+.about__title{
+    color: $shade-2;
+    
+
+}
+
+.about__subtitle{
+    color: $shade-2;
+}

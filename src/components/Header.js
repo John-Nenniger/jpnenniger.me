@@ -5,10 +5,8 @@ import MediaQuery from 'react-responsive';
 const Header = () => (
     <div className="header">
         <div></div>
-        <NavLink to="/" className="header__navlink" activeClassName="is-active" exact={true}> Blog </NavLink>
-        <MediaQuery maxDeviceWidth={ 600 }>
-            <NavLink to="/about" className="header__navlink" activeClassName="is-active"> About</NavLink>
-        </MediaQuery>
+        <NavLink to="/" className="header__navlink" activeClassName="is-active" exact={true}> Writing </NavLink>
+        <NavLink to="/about" className="header__navlink" activeClassName="is-active"> About</NavLink>
         <NavLink to="/photos" className="header__navlink" activeClassName="is-active"> Photos </NavLink>
         <div></div>
     </div>

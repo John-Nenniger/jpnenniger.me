@@ -3,32 +3,11 @@ html {
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto sans-serif;
     font-size: $m-size;
     margin: 0;
-    background-color: $shade-2;
-    // animation: colorchange 30s;
-    // -webkit-animation: colorchange 30s;
-    // animation-iteration-count: infinite;
+    background-color: $off-white;
 }
-
-// @keyframes colorchange {
-//   0% {background: lightblue;}
-//   20% {background: lightsteelblue;}
-//   40% {background: slategray;}
-//   60% {background: lightslategray;}
-//   80% {background: lightcyan;}
-//   100% {background: lightblue;}
-// }
-
-// @-webkit-keyframes colorchange {
-//   0% {background: lightblue;}
-//   20% {background: lightsteelblue;}
-//   40% {background: slategray;}
-//   60% {background: lightslategray;}
-//   80% {background: lightcyan;}
-//   100% {background: lightblue;}
-// }
 
 button {
     cursor: pointer;
