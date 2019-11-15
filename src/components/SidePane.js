@@ -10,20 +10,31 @@ class SidePane extends React.Component {
         super(props)
         this.onMouseOver = this.onMouseOver.bind(this)
         this.onMouseLeave = this.onMouseLeave.bind(this)
+        this.onClick = this.onClick.bind(this)
 
         this.state = {
-            display: false
+            hover: false,
+            clicked: false
+        }
+    }
+
+    onClick(){
+        console.log("onClick")
+        if (this.state.clicked === true){
+            this.setState(() => ({ clicked: false }))
+        } else {
+            this.setState(() => ({ clicked: true }))
         }
     }
 
     onMouseOver() {
-        console.log("onHover")
-        this.setState(() => ({ display: true }))
+        console.log("onHover", this.state)
+        this.setState(() => ({ hover: true }))
     }
 
     onMouseLeave(){
         console.log("onMouseLeave")
-        this.setState(() =>({ display: false }))
+        this.setState(() =>({ hover: false }))
     }
 
     render() {
@@ -32,15 +43,16 @@ class SidePane extends React.Component {
                 className="side-pane"
                 onMouseOver={this.onMouseOver}
                 onMouseLeave = {this.onMouseLeave}
+                onClick = {this.onClick}
             >
                 <FontAwesomeIcon 
                     icon="glasses"
                     className="side-pane__icon"
                 />
-                {this.state.display && <div className="about-me">
+                {(this.state.hover || this.state.clicked) && <div className="about-me">
                     <div className="side-pane__headshot"> </div>
                 </div>}
-                {this.state.display && <h1>Sidepanel</h1> }
+                {(this.state.hover || this.state.clicked) && <h1>Sidepanel</h1> }
             </div>
         )
     }
