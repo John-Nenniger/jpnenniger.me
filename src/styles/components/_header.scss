@@ -1,16 +1,22 @@
-.header__navlink {
-    font-size: $l-size;
-}
-
-.header__navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: space-around;
-}
-
 .header{
+    background-color: $color-4;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     width: 100vw;
     height: 14vh;
+}
+
+.header__navlink {
+    font-size: $l-size;
+    color: $shade-2;
+    transition: background-color 0.75s;
+    padding: $m-size;
+    border-radius: $m-size;
+    text-decoration: none;
+}
+
+
+.header__navlink:focus {
+    background-color: $color-2;
 }

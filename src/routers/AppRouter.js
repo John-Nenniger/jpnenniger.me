@@ -18,22 +18,24 @@ export default function AppRouter() {
                 <MediaQuery minDeviceWidth={ 600 }>
                    <SidePane/>
                 </MediaQuery>
-                <Switch>
-                    <Route 
-                        exact 
-                        path="/"
-                        component = { Blog }
-                    />
-                    <Route 
-                        path="/secret"
-                        component={ Secret }
-                    />
-                    <Route 
-                        path="/about" 
-                        component={ About }
-                    />
-                    <Route path="/photos" />
-                </Switch>
+                <div className="contents">
+                    <Switch>
+                        <Route 
+                            exact 
+                            path="/"
+                            component = { Blog }
+                        />
+                        <Route 
+                            path="/secret"
+                            component={ Secret }
+                        />
+                        <Route 
+                            path="/about" 
+                            component={ About }
+                        />
+                        <Route path="/photos" />
+                    </Switch>
+                </div>
             </main>
         </Router>
     )

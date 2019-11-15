@@ -1,6 +1,5 @@
 
 .side-pane {
-    background-color: #999999;
     position: fixed;
     width: 10vw;
     height: 100vh;
@@ -18,7 +17,7 @@
 
 
 .side-pane:hover {
-    background-color: #AAAAAA;
+    background-color: $color-2;
     width: 25vw;
     opacity: 1;
 }
