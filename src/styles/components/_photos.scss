@@ -1,0 +1,34 @@
+.photos{
+    height: 100%;
+    width: 100%;
+}
+
+
+.photos__photo{
+    height: 100%;
+    border-bottom: 2.2em;
+    border-color: $shade-2;
+}
+
+
+#photo-one{
+    padding-top: 14vh;
+    background: url('../../public/images/joffrey.jpg') no-repeat center center fixed;
+    background-origin: content-box;
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#photo-two{
+    margin-top: 14vh;
+    background: url('../../public/images/birdOnADock.jpeg') no-repeat center center fixed;
+    background-origin: content-box;
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

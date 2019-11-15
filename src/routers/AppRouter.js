@@ -7,6 +7,7 @@ import Blog from '../components/Blog';
 import About from '../components/About';
 import Secret from '../components/Secret';
 import Header from '../components/Header';
+import Photos from '../components/Photos';
 import SidePane from '../components/SidePane';
 import MediaQuery from 'react-responsive';
 
@@ -30,7 +31,9 @@ export default function AppRouter() {
                             path="/about" 
                             component={ About }
                         />
-                        <Route path="/photos" />
+                        <Route path="/photos"
+                            component= { Photos }
+                        />
                     </Switch>
                 </div>
             </main>
