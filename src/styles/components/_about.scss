@@ -30,6 +30,17 @@
     color: $shade-2;
 }
 
+.about__icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about__icon{
+    font-size: $l-size;
+
+}
+
+
 @media(max-width: $breakpoint-mobile) {
     .about{
         flex-direction: column;
