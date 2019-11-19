@@ -1,10 +1,14 @@
 .header{
+    position: fixed;
+    width: 100vw;
+    height: 9vh;
+    top: 0;
+    left: 0;
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 9vh;
+    box-shadow: 0.1rem 0.2rem 1.8rem rgba(0, 0, 0, 0.1);
 }
 
 .header__navlink {
@@ -17,22 +21,5 @@
 
 
 .is-active{
-    // font-size: $xl-size;
     font-style: bold;
 }
-
-// @keyframes slidedown{
-//     from {
-//         order:
-//     }
-
-//     to{
-
-//     }
-// }
-
-
-
-// .header__navlink:hover {
-//     background-color: $color-2;
-// }
