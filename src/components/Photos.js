@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const images = [{
             title: "Bowen Island",
@@ -32,6 +33,21 @@ class Pane extends React.Component{
                 data-active={this.active}
                 styles={this.styles}
                 >
+            
+                {this.active && 
+                    <button>
+                        <FontAwesomeIcon
+                            icon="arrow-circle-left"
+                        />
+                    </button>
+                }
+                {this.active && 
+                    <button>
+                        <FontAwesomeIcon
+                            icon="arrow-circle-right"
+                        />
+                    </button>
+                }
             </div>
         )
     }

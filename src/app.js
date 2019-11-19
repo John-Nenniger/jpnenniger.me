@@ -5,8 +5,8 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faGlasses} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faEnvelope, faGlasses, fab)
+library.add(fab, faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight)
 
 ReactDOM.render(<AppRouter />, document.getElementById('app'))
