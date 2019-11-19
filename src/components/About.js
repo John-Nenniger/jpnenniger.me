@@ -12,18 +12,24 @@ const About = () => (
             <h4 className="about__subtitle">Web Developer, Philosophy Major, Climber, Writer, Gamer, Human, Crab</h4>
             <p> Currently looking for fulltime Web Development work in Vancouver B.C. </p>
             <div className="about__icons">
+                <a href={"https://www.linkedin.com/in/john-paul-nenniger/"}>
+                    <FontAwesomeIcon 
+                        icon={['fab', 'linkedin']}
+                        className="about__icon"
+                        />
+                </a>
+                <a href={"https://github.com/John-Nenniger"}>
                 <FontAwesomeIcon 
                     icon={['fab', 'github']}
                     className="about__icon"
                 />
-                <FontAwesomeIcon 
-                    icon={['fab', 'linkedin']}
-                    className="about__icon"
-                />
+                </a>
+                <a href={"mailto:jpnenniger@gmail.com"}>
                 <FontAwesomeIcon 
                     icon="envelope"
                     className="about__icon"
                 />
+                </a>
             </div>
 
         </div>

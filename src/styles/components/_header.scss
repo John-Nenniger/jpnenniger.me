@@ -8,7 +8,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0.1rem 0.2rem 1.8rem rgba(0, 0, 0, 0.1);
+    // box-shadow: 0.1rem 0.2rem 1.8rem rgba(0, 0, 0, 0.1);
+    border-bottom: 0.1rem solid $shade-2;
 }
 
 .header__navlink {
