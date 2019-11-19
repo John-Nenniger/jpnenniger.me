@@ -12,6 +12,7 @@ import Photos from '../components/Photos';
 import SidePane from '../components/SidePane';
 import MediaQuery from 'react-responsive';
 
+
 export default function AppRouter() {
     return (
         <Router>
