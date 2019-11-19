@@ -16,17 +16,35 @@
     height: 90%;
     width: 90%;
     margin: $m-size;
-    box-shadow: 1.2em 1.2em 0.1em 0.2em $shade-1;
-    border: 0.4em
+    box-shadow: 1.2rem 1.2rem 0.1rem 0.2rem $shade-1;
+    border: 0.1em solid $shade-2
 }
 
 
 .about__title{
     color: $shade-2;
-    
 
 }
 
 .about__subtitle{
     color: $shade-2;
+}
+
+@media(max-width: $breakpoint-mobile) {
+    .about{
+        flex-direction: column;
+    }
+
+    .about__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about__profile-photo {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
 }

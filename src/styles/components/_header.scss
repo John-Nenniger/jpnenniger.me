@@ -1,5 +1,5 @@
 .header{
-    background-color: $shade-1;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,11 +9,28 @@
 
 .header__navlink {
     font-size: $l-size;
-    color: $off-white;
+    color: $shade-2;
     padding: $m-size;
     border-radius: $m-size;
     text-decoration: none;
 }
+
+
+.is-active{
+    // font-size: $xl-size;
+    font-style: bold;
+}
+
+// @keyframes slidedown{
+//     from {
+//         order:
+//     }
+
+//     to{
+
+//     }
+// }
+
 
 
 // .header__navlink:hover {
