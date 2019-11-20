@@ -1,32 +1,74 @@
 .photos{
     height: 100%;
     width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9vh;
+    overflow: hidden;
 }
 
 
-.photos__button{
+.photos__button-left, .photos__button-right{
     background: transparent;
-    border: none
+    border: none;
+    z-index: 2;
+    position: relative;
 }
 
-.photos__arrow{
-    opacity: 50%
+
+.photos__button-left{
+    bottom: 2rem;
+    left: 2rem;
+
 }
 
-.data_active{
-    height:100%;
-    width:100%;
+.photos__button-right{
+    top: 2rem;
+    right: 2rem;
+
+}
+
+
+.photos__arrow-left{
+    opacity: 50%;
+}
+
+.photos__arrow-right{
+    opacity: 50%;
+    
 }
 
 .photos__pane{
-    height: 90vh;
-    width: 90vw;    
-    // background-image: url('../../public/images/enjoyingTheView.jpeg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
 }
 
 
-img{
+// img {
+//     width: 100%;
+//     height: 100%;
+
+// }
+
+[data-active="true"]{
+    z-index: 1;
+}
+
+
+[data-active="false"] {
+    z-index: 0;
+}
+
+.photos__long-image{
     width: 100%;
-    height: 100%
+    height: 40vw;
+}
+
+.photos__tall-image{
+    width: 100%;
+    max-height: 200vw
 }

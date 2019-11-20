@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import dockImg from '../../public/images/birdOnADock.jpeg'
 import joffreyImg from '../../public/images/joffrey.jpg'
 import lookoutImg from '../../public/images/enjoyingTheView.jpeg'
+import cowichanImg from '../../public/images/cowichanLookout.jpeg'
+import lensFlareImg from '../../public/images/lensFlare.jpeg'
+import linesImg from '../../public/images/lines.jpeg'
+import pantheonImg from '../../public/images/pantheon.jpeg'
 
 
 class Pane extends React.Component{
@@ -20,21 +24,21 @@ class Pane extends React.Component{
             <div 
                 className={"photos__pane"} 
                 data-active={this.active}
-
-                >
-                <img src={this.file}></img>
+                style={{backgroundImage:`url('${this.file}')`}}
+            >
+            
                 {this.active && 
-                    <button className="photos__button">
+                    <button className="photos__button-left">
                         <FontAwesomeIcon
-                            className="photos__arrow"
+                            className="photos__arrow-left"
                             icon="arrow-circle-left"
                         />
                     </button>
                 }
                 {this.active && 
-                    <button className="photos__button">
+                    <button className="photos__button-right">
                         <FontAwesomeIcon
-                            className="photos__arrow"
+                            className="photos__arrow-right"
                             icon="arrow-circle-right"
                         />
                     </button>
@@ -48,7 +52,7 @@ class Pane extends React.Component{
 class Photos extends React.Component {
     constructor(props){
         super(props)
-        
+        console.log(lookoutImg)
         this.state = {
             images: [{
                 title: "Bowen Island",
