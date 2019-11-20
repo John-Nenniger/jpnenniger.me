@@ -4,7 +4,6 @@ import dockImg from '../../public/images/birdOnADock.jpeg'
 import joffreyImg from '../../public/images/joffrey.jpg'
 import lookoutImg from '../../public/images/enjoyingTheView.jpeg'
 import cowichanImg from '../../public/images/cowichanLookout.jpeg'
-import lensFlareImg from '../../public/images/lensFlare.jpeg'
 import linesImg from '../../public/images/lines.jpeg'
 import pantheonImg from '../../public/images/pantheon.jpeg'
 
@@ -63,6 +62,15 @@ class Photos extends React.Component {
             }, {
                 title: "Joffrey Lakes",
                 file: lookoutImg,
+            }, {
+                title: "Lake Cowichan",
+                file: cowichanImg,
+            }, {
+                title: "Power Lines",
+                file: linesImg,
+            }, {
+                title: "Pantheon",
+                file: pantheonImg,
             }],
             activeIndex: 1
         }
