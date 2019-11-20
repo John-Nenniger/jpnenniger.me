@@ -16,22 +16,22 @@
     background: transparent;
     border: none;
     z-index: 2;
-    position: relative;
+    position: absolute;
+    font-size: $l-size;
 }
 
 
 .photos__button-left {
-    bottom: 2rem;
+    bottom: 4rem;
     left: 2rem;
 
 }
 
 .photos__button-right {
-    top: 2rem;
+    bottom: 4rem;
     right: 2rem;
 
 }
-
 
 .photos__arrow-left {
     opacity: 50%;
