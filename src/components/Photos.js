@@ -10,52 +10,36 @@ import pantheonImg from '../../public/images/pantheon.jpeg'
 const l = console.log
 
 
-class Pane extends React.Component{
-    constructor(props){
-        super(props)
-
-        this.title = props.title
-        this.url = props.url
-        this.active = props.active || false
-        this.file = props.file
-        this.onClickLeft = props.onClickLeft
-        this.onClickRight = props.onClickRight
-    }
-
-    render(){
-        return (
-            <div 
-                className={"photos__pane"} 
-                data-active={this.active}
-                style={{backgroundImage:`url('${this.file}')`}}
-            >
-            
-                {this.active && 
-                    <button 
-                        className="photos__button-left"
-                        onClick = {this.onClickLeft}
-                    >  
-                        <FontAwesomeIcon
-                            className="photos__arrow-left"
-                            icon="arrow-circle-left"
-                        />
-                    </button>
-                }
-                {this.active && 
-                    <button 
-                        className="photos__button-right"
-                        onClick={this.onClickRight}
-                        >
-                        <FontAwesomeIcon
-                            className="photos__arrow-right"
-                            icon="arrow-circle-right"
-                        />
-                    </button>
-                }
-            </div>
-        )
-    }
-}
+const Pane = (props) => (
+    <div 
+        className={`photos__pane ${props.active ? "active" : "not-active"}`} 
+        style={{backgroundImage:`url('${props.file}')`}}
+    >
+    
+        {props.active && 
+            <button 
+                className="photos__button-left"
+                onClick = {props.handleClickLeft}
+            >  
+                <FontAwesomeIcon
+                    className="photos__arrow-left"
+                    icon="arrow-circle-left"
+                />
+            </button>
+        }
+        {props.active && 
+            <button 
+                className="photos__button-right"
+                onClick={props.handleClickRight}
+                >
+                <FontAwesomeIcon
+                    className="photos__arrow-right"
+                    icon="arrow-circle-right"
+                />
+            </button>
+        }
+    </div>
+)
 
 
 class Photos extends React.Component {
@@ -86,32 +70,34 @@ class Photos extends React.Component {
         }
     }
 
-    onClickRight(e){
-        e.preventDefault()
 
-        l('clicked right')
+    handleClickRight = (e) => {
+        e.preventDefault()
+        l('click right')
+
+        this.setState((state) => ({images: [...state.images.slice(1, 6), state.images[0]]}))
     }
 
-    onClickLeft(e){
+    handleClickLeft = (e) =>{
         e.preventDefault()
-
         l("clicked left")
+
+        this.setState((state) => ({images: [state.images[5], ...state.images.slice(0, 5)]}))
+        l(this.state)
     }
 
     render(){
+        const activeImage = this.state.images[this.state.activeIndex]
+
         return( 
             <div className="photos">
-                {this.state.images.slice(this.state.activeIndex - 1, this.state.activeIndex + 1).map((image, index) => (
                     <Pane 
-                        onClickLeft={this.onClickLeft}
-                        onClickRight={this.onClickRight}
-                        key={index}
-                        title={image.title}
-                        file={image.file}
-                        active={image === this.state.images[this.state.activeIndex]}
+                        handleClickLeft={this.handleClickLeft}
+                        handleClickRight={this.handleClickRight}
+                        title={activeImage.title}
+                        file={activeImage.file}
+                        active={true}
                         />
-                    ))
-                }
             </div>
         )
 

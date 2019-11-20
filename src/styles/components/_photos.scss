@@ -18,17 +18,18 @@
     z-index: 2;
     position: absolute;
     font-size: $l-size;
+    color: white;
 }
 
 
 .photos__button-left {
-    bottom: 4rem;
+    bottom: 50%;
     left: 2rem;
 
 }
 
 .photos__button-right {
-    bottom: 4rem;
+    bottom: 50%;
     right: 2rem;
 
 }
@@ -51,14 +52,14 @@
 
 }
 
+// what even is this? 
 
-[data-active="true"] {
+.active {
     z-index: 1;
 }
 
-
-[data-active="false"] {
-    z-index: 0;
+.not-active{
+    z-index: 0
 }
 
 .photos__long-image {
