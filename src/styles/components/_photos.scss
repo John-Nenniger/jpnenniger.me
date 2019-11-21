@@ -19,6 +19,11 @@
     position: absolute;
     font-size: $l-size;
     color: white;
+    transition: all 0.2s ease-in-out ;
+
+    &:hover{
+        transform: scale(1.3);
+    }
 }
 
 
@@ -34,14 +39,15 @@
 
 }
 
-.photos__arrow-left {
+.photos__arrow-left, .photos__arrow-right {
     opacity: 50%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        opacity: 1;
+    }
 }
 
-.photos__arrow-right {
-    opacity: 50%;
-    
-}
 
 .photos__pane {
     position: absolute;

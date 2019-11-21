@@ -22,26 +22,30 @@
 }
 
 
-.about__title{
+.about__title .about__subtitle {
     color: $shade-2;
 
 }
 
-.about__subtitle{
-    color: $shade-2;
-}
-
-.about__icons{
+.about__icons {
     display: flex;
     justify-content: space-around;
+    padding: $s-size;
 }
 
-.about__icon{
+.about__icon {
     font-size: $l-size;
+    transition:0.3s ease-in-out;
 
+    &:hover{
+        font-size: 4.0rem;
+    }
 }
+
+
 
 @media(max-width: $breakpoint-mobile) {
+
     .about{
         flex-direction: column;
     }

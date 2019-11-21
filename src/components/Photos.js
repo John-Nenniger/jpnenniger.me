@@ -89,7 +89,7 @@ class Photos extends React.Component {
     render(){
         const activeImage = this.state.images[this.state.activeIndex]
 
-        return( 
+        return ( 
             <div className="photos">
                     <Pane 
                         handleClickLeft={this.handleClickLeft}
