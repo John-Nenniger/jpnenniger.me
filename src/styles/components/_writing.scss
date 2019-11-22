@@ -1,0 +1,16 @@
+
+
+.writing{
+    font-size: $ml-size;
+    padding: $l-size;
+}
+
+
+
+@media(max-width: $breakpoint-mobile) {
+
+    .writing{
+        font-size: $m-size;
+        padding: $s-size;
+    }
+}

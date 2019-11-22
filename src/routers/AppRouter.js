@@ -20,12 +20,8 @@ export default function AppRouter() {
                         <Route 
                             exact 
                             path="/"
-                        >
-                        <div>
-                            <Blurb />
-                            <Writing />
-                        </div>
-                            </Route>
+                            component = { Writing }
+                        />
                         <Route 
                             path="/secret"
                             component={ Secret }
