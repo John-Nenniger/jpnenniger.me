@@ -1,5 +1,5 @@
 {
-  "name": "JackNenniger.com",
+  "name": "JPNenniger.me",
   "version": "1.0.0",
   "description": "A personal site built in react",
   "private": true,
@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
     "css-loader": "^3.2.0",
+    "dotenv": "^8.2.0",
     "file-loader": "^4.2.0",
     "normalize.css": "^8.0.1",
     "react": "^16.11.0",

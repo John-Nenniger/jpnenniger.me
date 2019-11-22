@@ -4,8 +4,4 @@ node_modules/
 
 .env
 
-public/images
-
-public/svg
-
 public/bundled_files

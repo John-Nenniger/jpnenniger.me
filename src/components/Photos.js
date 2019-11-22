@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import dockImg from '../../public/images/birdOnADock.jpeg'
-import joffreyImg from '../../public/images/joffrey.jpg'
-import lookoutImg from '../../public/images/enjoyingTheView.jpeg'
-import cowichanImg from '../../public/images/cowichanLookout.jpeg'
-import linesImg from '../../public/images/lines.jpeg'
-import pantheonImg from '../../public/images/pantheon.jpeg'
+// import dockImg from '../../public/images/birdOnADock.jpeg'
+// import joffreyImg from '../../public/images/joffrey.jpg'
+// import lookoutImg from '../../public/images/enjoyingTheView.jpeg'
+// import cowichanImg from '../../public/images/cowichanLookout.jpeg'
+// import linesImg from '../../public/images/lines.jpeg'
+// import pantheonImg from '../../public/images/pantheon.jpeg'
+import rockImg from '../../public/images/whereWasThisRock.png'
 
 const l = console.log
 
@@ -48,25 +49,10 @@ class Photos extends React.Component {
 
         this.state = {
             images: [{
-                title: "Bowen Island",
-                file: dockImg,
-            }, {
-                title: "An Appartment in Italy",
-                file: lookoutImg,
-            }, {
-                title: "Joffrey Lakes",
-                file: joffreyImg,
-            }, {
-                title: "Lake Cowichan",
-                file: cowichanImg,
-            }, {
-                title: "Power Lines",
-                file: linesImg,
-            }, {
-                title: "Pantheon",
-                file: pantheonImg,
+                title: "Sardinia",
+                file: rockImg,
             }],
-            activeIndex: 2
+            activeIndex: 0
         }
     }
 
