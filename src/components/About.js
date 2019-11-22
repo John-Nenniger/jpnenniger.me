@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Vocations from './Vocations'
 
 const About = () => (
     <div className="about">
@@ -9,8 +9,8 @@ const About = () => (
         </div>
         <div className="about__container">
             <h1 className="about__title">Jack Nenniger </h1>
-            <h4 className="about__subtitle">Web Developer, Photograher, Philosophy Major, Climber, Snowboarder, Writer, Gamer, Human</h4>
-            <p> Currently looking for fulltime Web Development work in Vancouver B.C. </p>
+            <Vocations />
+            <p> Currently doing stuff in Vancouver B.C.</p>
             <div className="about__icons">
                 <a href={"https://www.linkedin.com/in/john-paul-nenniger/"}>
                     <FontAwesomeIcon 

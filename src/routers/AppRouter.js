@@ -7,22 +7,25 @@ import Writing from '../components/Writing';
 import About from '../components/About';
 import Secret from '../components/Secret';
 import Photos from '../components/Photos';
-import MediaQuery from 'react-responsive';
+import Blurb from '../components/Blurb'
 
 
 export default function AppRouter() {
     return (
         <Router>
             <main className="main" >
-                {/* <Header /> */}
-                <Header />
+
                 <div className="contents">
                     <Switch>
                         <Route 
                             exact 
                             path="/"
-                            component = { Writing }
-                        />
+                        >
+                        <div>
+                            <Blurb />
+                            <Writing />
+                        </div>
+                            </Route>
                         <Route 
                             path="/secret"
                             component={ Secret }
