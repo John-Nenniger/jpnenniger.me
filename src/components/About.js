@@ -9,7 +9,7 @@ const About = () => (
         </div>
         <div className="about__container">
             <h1 className="about__title">Jack Nenniger </h1>
-            <h4 className="about__subtitle">Web Developer, Philosophy Major, Climber, Writer, Gamer, Human, Crab</h4>
+            <h4 className="about__subtitle">Web Developer, Photograher, Philosophy Major, Climber, Snowboarder, Writer, Gamer, Human</h4>
             <p> Currently looking for fulltime Web Development work in Vancouver B.C. </p>
             <div className="about__icons">
                 <a href={"https://www.linkedin.com/in/john-paul-nenniger/"}>

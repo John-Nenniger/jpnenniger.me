@@ -6,10 +6,7 @@ import { BrowserRouter as Router,
 import Writing from '../components/Writing';
 import About from '../components/About';
 import Secret from '../components/Secret';
-import Header from '../components/Header';
-import AnimatedHeader from '../components/AnimatedHeader';
 import Photos from '../components/Photos';
-import SidePane from '../components/SidePane';
 import MediaQuery from 'react-responsive';
 
 
