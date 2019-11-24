@@ -26,7 +26,8 @@
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode production",
+    "start": "I don;t know...", 
     "dev-server": "webpack-dev-server"
   },
   "devDependencies": {
