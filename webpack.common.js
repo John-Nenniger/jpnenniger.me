@@ -7,11 +7,11 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public'),
     },
-    // plugins: [
-    //     new HtmlWebpackPlugin({
-    //         title: 'production'
-    //     })
-    // ],
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'production'
+        })
+    ],
     module: {
         rules: [{
             loader: "babel-loader",

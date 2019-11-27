@@ -13,6 +13,8 @@
     - [x] read the webpack production config section carefully and take notes
     - [ ] add env vars
     - [x] figure out image loading properly
+    - [ ] get this thing running on Heroku :/
+    
 
 ## Small things
 - [ ] fix the icons moving on hover
