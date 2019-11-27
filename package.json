@@ -36,7 +36,7 @@
   },
   "scripts": {
     "build": "webpack --open --config webpack.prod.js",
-    "dev-server": "webpack-dev-server --open --config webpack.dev.js"
+    "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "devDependencies": {}
 }
