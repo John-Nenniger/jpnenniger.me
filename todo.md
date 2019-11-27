@@ -8,10 +8,11 @@
 
 - [ ] Webpack production config
     - [ ] add error handling so I can see what the problem is when the build fails on the server
-    - [ ] create separate production config
-    - [ ] create dev config
+    - [x] create separate production config
+    - [x] create dev config
     - [ ] read the webpack production config section carefully and take notes
     - [ ] add env vars
+    - [x] figure out image loading properly
 
 ## Small things
 - [ ] fix the icons moving on hover
