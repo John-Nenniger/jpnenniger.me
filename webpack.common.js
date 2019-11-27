@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -6,6 +7,11 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public'),
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'production'
+        })
+    ],
     module: {
         rules: [{
             loader: "babel-loader",
