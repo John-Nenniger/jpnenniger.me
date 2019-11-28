@@ -11,12 +11,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'JPNenniger.me',
-            template: './dist/index.html',
             filename: './index.html'
         }),
         new CleanWebpackPlugin({
-            dry: true,
-            cleanOnceBeforeBuildPatterns: ['dist/*', '!images/*']
+            cleanOnceBeforeBuildPatterns: ['bundled_files/*', 'bundle.js', 'bundle.js.map', 'index.html', '!images/*']
         })
     ],
     module: {
