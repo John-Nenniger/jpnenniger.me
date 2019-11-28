@@ -7,3 +7,5 @@ node_modules/
 public/bundled_files
 
 public/bundle.js
+
+public/bundle.js.map
