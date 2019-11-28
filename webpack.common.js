@@ -9,7 +9,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'production',
+            title: 'JPNenniger.me',
             template: './public/index.html',
             filename: './index.html'
         })
