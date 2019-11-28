@@ -9,4 +9,4 @@ import { faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight } from '@f
 
 library.add(fab, faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight)
 
-ReactDOM.render(<AppRouter />, document.body)
+ReactDOM.render(<AppRouter />, document.getElementById('app'))
