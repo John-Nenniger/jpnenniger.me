@@ -1,6 +1,9 @@
 {
   "name": "JPNenniger.me",
   "version": "1.0.0",
+  "engines": {
+    "node": "11.15.0"
+  },
   "description": "A personal site built in react",
   "private": true,
   "main": "src/app.js",
@@ -17,8 +20,10 @@
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.13.0",
@@ -37,7 +42,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "yarn run build && NODE_ENV=production node server.js"
   },
   "devDependencies": {}
 }

@@ -4,8 +4,8 @@ node_modules/
 
 .env
 
-public/bundled_files
+dist/bundled_files
 
-public/bundle.js
+dist/bundle.js
 
-public/bundle.js.map
+dist/bundle.js.map

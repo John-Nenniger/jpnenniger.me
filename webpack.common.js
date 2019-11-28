@@ -1,17 +1,20 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
     entry: './src/app.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'production',
-            template: './public/index.html',
+            title: 'JPNenniger.me',
             filename: './index.html'
+        }),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['bundled_files/*', 'bundle.js', 'bundle.js.map', 'index.html', '!images/*']
         })
     ],
     module: {
@@ -35,7 +38,7 @@ module.exports = {
         }]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
+        contentBase: path.join(__dirname, 'dist'),
         historyApiFallback: true
     }
 };

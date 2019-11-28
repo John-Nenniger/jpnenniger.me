@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import dockImg from '../../public/images/birdOnADock.jpeg'
-// import joffreyImg from '../../public/images/joffrey.jpg'
-// import lookoutImg from '../../public/images/enjoyingTheView.jpeg'
-// import cowichanImg from '../../public/images/cowichanLookout.jpeg'
-// import linesImg from '../../public/images/lines.jpeg'
-// import pantheonImg from '../../public/images/pantheon.jpeg'
-import rockImg from '../../public/images/whereWasThisRock.png'
+// import dockImg from '../../images/birdOnADock.jpeg'
+// import joffreyImg from '../../images/joffrey.jpg'
+// import lookoutImg from '../../images/enjoyingTheView.jpeg'
+// import cowichanImg from '../../images/cowichanLookout.jpeg'
+// import linesImg from '../../images/lines.jpeg'
+// import pantheonImg from '../../images/pantheon.jpeg'
+import rockImg from '../../images/whereWasThisRock.png'
 
 const l = console.log
 

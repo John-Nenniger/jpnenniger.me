@@ -6,15 +6,14 @@
 - [ ] add hover effects to Vocations
 - [ ] add hover effects to blurb
 
-- [ ] Webpack production config
+- [x] Webpack production config
     - [x] add error handling so I can see what the problem is when the build fails on the server
     - [x] create separate production config
     - [x] create dev config
     - [x] read the webpack production config section carefully and take notes
-    - [ ] add env vars
+    - [x] add env vars
     - [x] figure out image loading properly
-    - [ ] get this thing running on Heroku :/
-    
+    - [x] get this thing running on Heroku :/
 
 ## Small things
 - [ ] fix the icons moving on hover
