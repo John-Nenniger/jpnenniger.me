@@ -5,10 +5,10 @@ const l = console.log
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('*', (req, res) => {
-    res.sendFile(`${__dirname}/public/index.html`)
+    res.sendFile(`${__dirname}/dist/index.html`)
 })
 
 

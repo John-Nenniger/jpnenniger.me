@@ -6,15 +6,18 @@ module.exports = {
     entry: './src/app.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'JPNenniger.me',
-            template: './public/index.html',
+            template: './dist/index.html',
             filename: './index.html'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin({
+            dry: true,
+            cleanOnceBeforeBuildPatterns: ['dist/*', '!images/*']
+        })
     ],
     module: {
         rules: [{
@@ -37,7 +40,7 @@ module.exports = {
         }]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
+        contentBase: path.join(__dirname, 'dist'),
         historyApiFallback: true
     }
 };
