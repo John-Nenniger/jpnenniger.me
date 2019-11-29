@@ -2,5 +2,19 @@
 .contents{
     margin-top: 6vh;
     width: 100%;
-    height: 100vh;
+    max-width: 80rem;
+    min-height: 100vh;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media(max-width: $breakpoint-mobile) {
+
+    .contents{
+        min-height: calc(100vh - 162px);
+    }
 }

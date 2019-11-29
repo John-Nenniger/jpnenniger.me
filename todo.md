@@ -36,3 +36,11 @@
 ## Small things
 
 - [ ] fix the icons moving on hover
+- [ ] fix this error: "Warning: render(): Rendering components directly into document.body is discouraged, since its children are often manipulated by third-party scripts and browser extensions. This may lead to subtle reconciliation issues. Try rendering into a container element created for your app."
+
+
+
+# Aspirational
+
+- [ ] create some custom SVGs
+- [ ] 
