@@ -13,7 +13,7 @@
 
 # Photo slider
 
-- [ ] Greatly reduce image sizes in photo slider
+- [x] Greatly reduce image sizes in photo slider
 - [ ] Finish Photo Slider with smaller images, and lazy loading, and decide whether it's fast enough
 - [ ] Put a version of the photo slider on CodePen and link to it in Read.me
 
@@ -43,3 +43,5 @@
 # Aspirational
 
 - [ ] create some custom SVGs
+- [ ] add a version of photo slider to codepen
+- [ ] add a codepen link to icons
