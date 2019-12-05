@@ -1,11 +1,11 @@
 .photos {
-    height: 91vh;
+    height: 100vh;
     width: 100%;
+    min-width: 60rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 9vh;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
     z-index: 2;
     position: absolute;
     font-size: $l-size;
-    color: white;
+    color: $dark-gray;
     transition: all 0.2s ease-in-out ;
 
     &:hover{
@@ -40,7 +40,7 @@
 }
 
 .photos__arrow-left, .photos__arrow-right {
-    opacity: 50%;
+    opacity: 70%;
     transition: all 0.2s ease-in-out;
 
     &:hover{
@@ -58,8 +58,6 @@
 
 }
 
-// what even is this? 
-
 .active {
     z-index: 1;
 }
@@ -76,4 +74,23 @@
 .photos__tall-image {
     width: 100%;
     max-height: 200vw
+}
+
+.photos__header{
+    display: flex;
+    z-index: 4;
+    background: transparent;
+    position: absolute;
+    top: 0.6rem;
+    justify-content: space-around;
+    width: 100%;
+    font-size: $l-size;
+}
+
+.photos__jack{
+    width: 5rem;
+    height: 5rem;
+    max-height: 5rem;
+    background: center;
+    border-radius: 100%;
 }

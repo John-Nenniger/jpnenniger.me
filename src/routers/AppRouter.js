@@ -13,27 +13,24 @@ export default function AppRouter() {
     return (
         <Router>
             <main className="main" >
-
-                <div className="contents">
-                    <Switch>
-                        <Route 
-                            exact 
-                            path="/"
-                            component = { Writing }
-                        />
-                        <Route 
-                            path="/secret"
-                            component={ Secret }
-                        />
-                        <Route 
-                            path="/about" 
-                            component={ About }
-                        />
-                        <Route path="/photos"
-                            component= { Photos }
-                        />
-                    </Switch>
-                </div>
+                <Switch>
+                    <Route 
+                        exact 
+                        path="/"
+                        component = { Writing }
+                    />
+                    <Route 
+                        path="/secret"
+                        component={ Secret }
+                    />
+                    <Route 
+                        path="/about" 
+                        component={ About }
+                    />
+                    <Route path="/photos"
+                        component= { Photos }
+                    />
+                </Switch>
             </main>
         </Router>
     )

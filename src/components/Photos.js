@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 // import dockImg from '../../images/birdOnADock.jpeg'
 import joffreyImg from '../../images/joffrey.jpg'
 // import lookoutImg from '../../images/lookout.jpeg'
@@ -8,6 +9,7 @@ import linesImg from '../../images/lines.jpeg'
 import pantheonImg from '../../images/pantheon.jpeg'
 import riverImg from '../../images/river.jpeg'
 import rockImg from '../../images/whereWasThisRock.png'
+import faceImg from '../../images/face.jpeg'
 
 const l = console.log
 
@@ -66,38 +68,43 @@ class Photos extends React.Component {
                 file: riverImg,
             }
         ],
-            activeIndex: 3
+            activeIndex: 2
         }
     }
 
 
     handleClickRight = (e) => {
         e.preventDefault()
-        l('click right')
 
-        this.setState((state) => ({images: [...state.images.slice(1, 6), state.images[0]]}))
+        this.setState((state) => ({images: [...state.images.slice(1, state.images.length), state.images[0]]}))
     }
 
     handleClickLeft = (e) =>{
         e.preventDefault()
-        l("clicked left")
 
-        this.setState((state) => ({images: [state.images[5], ...state.images.slice(0, 5)]}))
-        l(this.state)
+        this.setState((state) => ({images: [state.images[state.images.length - 1], ...state.images.slice(0, state.images.length - 2)]}))
     }
 
     render(){
         const activeImage = this.state.images[this.state.activeIndex]
-        l(activeImage)
         return ( 
             <div className="photos">
-                    <Pane 
-                        handleClickLeft={this.handleClickLeft}
-                        handleClickRight={this.handleClickRight}
-                        title={activeImage.title}
-                        file={activeImage.file}
-                        active={true}
-                        />
+                <div className="photos__header">
+                    <div className="photos__jack"
+                        style={{backgroundImage:`url('${faceImg}')`}}
+                    >
+                    </div>
+                    <Link to="/"> 
+                        Writing  
+                    </Link>
+                </div>
+                <Pane 
+                    handleClickLeft={this.handleClickLeft}
+                    handleClickRight={this.handleClickRight}
+                    title={activeImage.title}
+                    file={activeImage.file}
+                    active={true}
+                    />
             </div>
         )
 
