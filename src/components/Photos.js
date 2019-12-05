@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import dockImg from '../../images/birdOnADock.jpeg'
-// import joffreyImg from '../../images/joffrey.jpg'
-// import lookoutImg from '../../images/enjoyingTheView.jpeg'
+import joffreyImg from '../../images/joffrey.jpg'
+// import lookoutImg from '../../images/lookout.jpeg'
 // import cowichanImg from '../../images/cowichanLookout.jpeg'
-// import linesImg from '../../images/lines.jpeg'
-// import pantheonImg from '../../images/pantheon.jpeg'
+import linesImg from '../../images/lines.jpeg'
+import pantheonImg from '../../images/pantheon.jpeg'
+import riverImg from '../../images/river.jpeg'
 import rockImg from '../../images/whereWasThisRock.png'
 
 const l = console.log
@@ -51,8 +52,21 @@ class Photos extends React.Component {
             images: [{
                 title: "Sardinia",
                 file: rockImg,
-            }],
-            activeIndex: 0
+            }, {
+                title: "Joffrey",
+                file: joffreyImg,
+            }, {
+                title: "Pantheon",
+                file: pantheonImg,
+            }, {
+                title: "Lines",
+                file: linesImg,
+            }, {
+                title: "River",
+                file: riverImg,
+            }
+        ],
+            activeIndex: 3
         }
     }
 
@@ -74,7 +88,7 @@ class Photos extends React.Component {
 
     render(){
         const activeImage = this.state.images[this.state.activeIndex]
-
+        l(activeImage)
         return ( 
             <div className="photos">
                     <Pane 
