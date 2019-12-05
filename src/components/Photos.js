@@ -90,10 +90,12 @@ class Photos extends React.Component {
         return ( 
             <div className="photos">
                 <div className="photos__header">
-                    <div className="photos__jack"
-                        style={{backgroundImage:`url('${faceImg}')`}}
-                    >
-                    </div>
+                    <a href="/about">
+                        <FontAwesomeIcon
+                            className="glasses"
+                            icon="glasses"
+                        />
+                    </a>
                     <Link to="/"> 
                         Writing  
                     </Link>
@@ -104,10 +106,9 @@ class Photos extends React.Component {
                     title={activeImage.title}
                     file={activeImage.file}
                     active={true}
-                    />
+                />
             </div>
         )
-
     }
 }
 
