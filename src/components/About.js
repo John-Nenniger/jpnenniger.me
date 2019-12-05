@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Vocations from './Vocations'
+import Blurb from './Blurb';
 
 const About = () => (
     <div className="about">
@@ -8,7 +9,7 @@ const About = () => (
             <div className="about__profile-photo"></div>
         </div>
         <div className="about__container">
-            <h1 className="about__title">Jack Nenniger </h1>
+            <Blurb/>
             <Vocations />
             <p> Currently doing stuff in Vancouver B.C.</p>
             <div className="about__icons">
