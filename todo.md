@@ -8,8 +8,8 @@
 - [ ] Write debreif blogpost
 - [ ] Further style the Writing page
 - [ ] add a small version of my picture to Blurb
-- [ ] add hover effects to Vocations
-- [ ] add hover effects to blurb
+- [x] add hover effects to Vocations
+- [x] add hover effects to blurb
 
 # Photo slider
 
@@ -35,4 +35,11 @@
 
 ## Small things
 
-- [ ] fix the icons moving on hover
+- [x] fix the icons moving on hover
+- [x] fix this error: "Warning: render(): Rendering components directly into document.body is discouraged, since its children are often manipulated by third-party scripts and browser extensions. This may lead to subtle reconciliation issues. Try rendering into a container element created for your app."
+
+
+
+# Aspirational
+
+- [ ] create some custom SVGs

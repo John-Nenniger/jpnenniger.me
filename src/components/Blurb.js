@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Vocations from './Vocations'
 
 
 export default () => (
@@ -10,6 +9,5 @@ export default () => (
                 Jack Nenniger 
             </h1>
         </Link>
-        <Vocations />
     </div>
 )

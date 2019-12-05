@@ -9,4 +9,15 @@ import { faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight } from '@f
 
 library.add(fab, faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight)
 
-ReactDOM.render(<AppRouter />, document.body)
+
+// this bit of DOM manipulation is not a good idea, but is a quick fix
+// so that I don't have to dive back into webpack config again right this moment
+// TODO: Remove the following 3 lines of code and instead add a template HTML file to the 
+// webpack build
+
+let appNode = document.createElement("div");
+appNode.setAttribute("id", "app")
+document.body.appendChild(appNode)
+
+
+ReactDOM.render(<AppRouter />, document.getElementById('app'))

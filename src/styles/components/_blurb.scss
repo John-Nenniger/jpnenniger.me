@@ -1,3 +1,13 @@
-.blurb__subtitle{
-    
+.blurb{
+    display: inline-block;
+    // width: auto;
+}
+
+.blurb__name{
+    text-decoration: underline #fdfeff;
+    width: auto;
+
+    &:hover {
+        text-decoration: underline $light-gray;
+    }
 }

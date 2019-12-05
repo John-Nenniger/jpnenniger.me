@@ -3,10 +3,14 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Rubik', sans-serif;
     font-size: $m-size;
     background-color: #fdfeff;
 
+}
+
+h1 + h2 + h3 + h4{
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
