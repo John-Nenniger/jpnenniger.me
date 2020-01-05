@@ -5,9 +5,9 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight, faDotCircle} from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight)
+library.add(fab, faEnvelope, faGlasses, faArrowCircleLeft, faArrowCircleRight, faDotCircle)
 
 
 // this bit of DOM manipulation is not a good idea, but is a quick fix

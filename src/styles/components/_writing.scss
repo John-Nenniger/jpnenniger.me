@@ -5,12 +5,28 @@
     padding: $l-size;
 }
 
+.writing_bullet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.writing__bullet_icon{
+    font-size: $s-size;
+    margin-right: $xs-size;
+
+}
+
+.article__title{
+    text-decoration: underline $highlight-blue;
+}
 
 
 @media(max-width: $breakpoint-mobile) {
 
     .writing{
-        font-size: $m-size;
-        padding: $s-size;
+        font-size: $l-size;
+        padding: $l-size;
     }
 }

@@ -9,6 +9,14 @@ body {
 
 }
 
+*::selection{
+    background: $highlight-blue;
+}
+
+*::-moz-selection{
+    background: $highlight-blue;
+}
+
 h1 + h2 + h3 + h4{
     font-family: 'Roboto', sans-serif;
 }

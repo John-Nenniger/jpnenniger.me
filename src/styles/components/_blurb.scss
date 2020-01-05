@@ -4,11 +4,10 @@
 }
 
 .blurb__name{
-    font: sans-serif;
     text-decoration: underline #fdfeff;
     width: auto;
 
     &:hover {
-        text-decoration: underline $light-gray;
+        text-decoration: underline $highlight-blue;
     }
 }
