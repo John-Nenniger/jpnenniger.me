@@ -6,7 +6,7 @@ body {
     font-family:'Rubik', sans-serif;
     font-size: $m-size;
     background-color: #fdfeff;
-
+    color: $dark-gray;
 }
 
 *::selection{
@@ -37,4 +37,18 @@ button:disabled {
 
 .is-active {
     font-weight: bold;
+}
+
+.external_link {
+    &:hover {
+        border-bottom: 0.1rem solid $highlight-blue;
+        color: black
+    }
+}
+
+
+p, ul, h1, h2, h3, h4, h5, h6 {
+    &:hover{
+        color: black
+    }
 }

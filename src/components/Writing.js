@@ -10,12 +10,15 @@ const Writing = () => {
                 <Blurb />
                 <Vocations />
                 <article className="writing__container">
-                    <h4 className="article__title">On Building this site</h4>
-
+                    <h3 className="article__title">On Building this site</h3>
+                    <h4 className="article__subtitle">Goals and Expectations:</h4>
                     <p>
                         One of the most important side-projects a developer can work is creating a personal site.  
                         I haven’t gotten to it so far in my career, and it seems like one of those things every developer should have.  
-                        It’s a great opportunity to use React, to have essentially an online business card, and to put myself out into the world even if in a very small way(link another post).
+                        It’ s a great opportunity to use React, to have essentially an online business card, to put myself out into the world, and to  
+                        <a className="external_link" href="https://www.taniarascia.com/learn/"> 
+                            &nbsp;learn in public
+                        </a>.
                     </p>
 
                     <p>

@@ -18,10 +18,11 @@
 
 }
 
-.article__title{
+.article__title, .article__subtitle{
     text-decoration: underline $highlight-blue;
-}
+    color: black;
 
+}
 
 @media(max-width: $breakpoint-mobile) {
 

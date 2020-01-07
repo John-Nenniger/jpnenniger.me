@@ -1,11 +1,11 @@
 .blurb{
     display: inline-block;
-    // width: auto;
 }
 
 .blurb__name{
     text-decoration: underline #fdfeff;
     width: auto;
+    color: black;
 
     &:hover {
         text-decoration: underline $highlight-blue;

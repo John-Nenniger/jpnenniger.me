@@ -12,7 +12,7 @@ const About = () => (
             <div className="about__container">
                 <Blurb/>
                 <Vocations />
-                <p> Currently doing stuff in Vancouver B.C.</p>
+                <p> Currently developing in Vancouver B.C.</p>
                 <div className="about__icons">
                     <a href={"https://www.linkedin.com/in/john-paul-nenniger/"}>
                         <FontAwesomeIcon 
