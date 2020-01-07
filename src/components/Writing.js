@@ -120,7 +120,7 @@ const Writing = () => {
 
                     <h3 className="article__title">So how did it go?</h3>
 
-                    <a className="external_link" href="/"> 
+                    <a className="external_link" href="https://github.com/John-Nenniger/jpnenniger.me"> 
                         <p> 
                             Check out the code for this project 
                         </p>
