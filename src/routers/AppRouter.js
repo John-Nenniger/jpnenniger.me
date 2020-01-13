@@ -17,15 +17,15 @@ export default function AppRouter() {
                     <Route 
                         exact 
                         path="/"
-                        component = { Writing }
+                        component = { About }
                     />
                     <Route 
                         path="/secret"
                         component={ Secret }
                     />
                     <Route 
-                        path="/about" 
-                        component={ About }
+                        path="/writing" 
+                        component={ Writing }
                     />
                     <Route path="/photos"
                         component= { Photos }

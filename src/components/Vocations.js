@@ -8,7 +8,7 @@ export default () => (
             Philosophy Major,&nbsp;
             Climber,&nbsp;
             Snowboarder,&nbsp;           
-            <Link to="/"> 
+            <Link to="/writing"> 
                 Writer,&nbsp;   
             </Link>
             Gamer,&nbsp;  
